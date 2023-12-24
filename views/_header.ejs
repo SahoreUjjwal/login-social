@@ -1,0 +1,16 @@
+<nav class="navbar navbar-light bg-light">
+    <%if(!locals.user){%>
+        <a href="/user/login">
+            Login
+        </a>
+        <a href="/user/sign-up">
+            Sign Up
+        </a>
+    <%}else{%>
+        <a href="/user/logout">
+            Logout
+        </a>
+    <%}%>
+</nav>
+
+  
